@@ -1,0 +1,10 @@
+build
+.env
+.env.local
+.vscode
+
+# Ignore libs
+**/*.a
+**/*.o
+**/*.so
+**/*.dll

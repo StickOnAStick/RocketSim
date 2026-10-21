@@ -1,0 +1,22 @@
+{
+  "version": 6,
+  "configurePresets": [
+    {
+      "name": "llvm-cxx26",
+      "displayName": "Homebrew LLVM 22 (C++26)",
+      "generator": "Unix Makefiles",
+      "binaryDir": "${sourceDir}/build-cxx26",
+      "cacheVariables": {
+        "CMAKE_C_COMPILER": "/opt/homebrew/opt/llvm/bin/clang",
+        "CMAKE_CXX_COMPILER": "/opt/homebrew/opt/llvm/bin/clang++",
+        "CMAKE_EXPORT_COMPILE_COMMANDS": "ON"
+      }
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "llvm-cxx26",
+      "configurePreset": "llvm-cxx26"
+    }
+  ]
+}
